@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".TotalFragment" android:id="@+id/frameLayout">
+    <TextView
+            android:text="Network"
+            android:layout_width="73dp"
+            android:layout_height="36dp" android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" app:layout_constraintEnd_toStartOf="@+id/textNetwork"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintHorizontal_bias="0.482"
+            android:layout_marginTop="64dp" app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+    <TextView
+            android:text="Database"
+            android:layout_width="73dp"
+            android:layout_height="36dp" android:id="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:layout_marginBottom="280dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/textData"
+            android:layout_marginEnd="32dp" app:layout_constraintHorizontal_bias="0.551" android:layout_marginTop="76dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+    <TextView
+            android:text="Java"
+            android:layout_width="73dp"
+            android:layout_height="36dp" android:id="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="32dp" app:layout_constraintEnd_toStartOf="@+id/textJava"
+            app:layout_constraintHorizontal_bias="0.4"
+            android:layout_marginTop="176dp" app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/textJava" android:layout_marginTop="152dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/textNetwork" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="64dp" app:layout_constraintTop_toBottomOf="@+id/textJava"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/textData" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="76dp" app:layout_constraintTop_toBottomOf="@+id/textNetwork"
+            android:layout_marginBottom="280dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTotal" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginBottom="44dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+    />
+</android.support.constraint.ConstraintLayout>
